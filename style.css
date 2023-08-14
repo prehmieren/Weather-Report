@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    color: #515151;
+    background-color: #43c9ce;
+    background: linear-gradient(45deg, #836096, #ED7B7B);
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    color: #fff;
+    margin-top: 5%;
+}
+
+section {
+    margin-top: 7%;
+
+}
+
+#card {
+    width: 500px;
+    box-shadow: 0 10px 0 #515154;
+}
+
+#weather {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background: #F0B86E;
+    height: 10vh;
+    padding: 20px 0;
+    border: 1px solid #F0B86E;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#weather>h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#location {
+    color: #fff;
+}
+
+#city {
+    margin: 0;
+    font-size: 2em;
+}
+
+#state {
+    margin-top: 0;
+}
+
+#info {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#info>* {
+    border-right: 1px solid #e6e6e6;
+    padding: 20px;
+    flex: 1;
+}
+
+#info>*:last-child {
+    border: none;
+}
+
+form {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+form input {
+    border: 0;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 40%;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+form>button {
+    background-color: #836096;
+    border: 0;
+    border-radius: 50px;
+    padding: 13px 30px;
+    color: #fff;
+    right: 2px;
+    top: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #card {
+        width: 300px;
+    }
+
+
+
+    button {
+        width: 150px;
+
+    }
+}
